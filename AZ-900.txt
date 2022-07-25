@@ -1,0 +1,31 @@
+1.1 DESCRIBE THE BENEFITS AND CONSIDERATIONS OF USING CLOUD SERVICES:
+> High Availabity: 
+    SLA (Service-level agreement): Garante um certo nível de disponibilidade em porcentagem. 
+                                    Garante um tempo de atividade de cerca de 100%
+    - Network outage:
+    - Application failure:  Application Inseghts integration with your application to give you detailed 
+                            information about the performance and reliability of your application.
+    - System outage: 
+    - Power outage
+    - Problems with a reliant system
+
+> Scalability, Elasticity and agility
+ * Scalability: horizontal scaling (scaling out) aumenta o número de VM´s.
+                verical scaling (scaling up) aumenta o poder da VM's.
+ * Elasticity: thw conept of automatically scaling based on the usage patter for your application.
+ * Agility: kind of speed and flxibility to quicly scale in the cloud.
+
+ > Fault tolerance and disaster recovery: Is designed to deal with failure at a small scale, moving you,
+ for example, from an unhealthy VM to a healthy VM. Disaster recovery plans are commonly referred to as 
+ Business Continuaty and Disaster Recovery (BCDR) plans.
+
+ > Economic benefits of the cloud: 
+    - On-Promises Model (Modelo Local): 
+    - Cloud Model (MOodelo em nuvem): offers many economic benefits over the op-promises model
+
+1.2 DESCRIBE THE DIFFERENCES BETWEEN INFRASTRUCTURE-AS-A-SERVICE (IAAS), 
+    PLATFORM-AS-A-SERVICE (PAAS), AND SOFTWARE-AS-A-SERVICE (SAAS):
+
+
+
+ 
