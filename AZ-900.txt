@@ -12,8 +12,8 @@
 > Scalability, Elasticity and agility
  * Scalability: horizontal scaling (scaling out) aumenta o número de VM´s.
                 verical scaling (scaling up) aumenta o poder da VM's.
- * Elasticity: thw conept of automatically scaling based on the usage patter for your application.
- * Agility: kind of speed and flxibility to quicly scale in the cloud.
+ * Elasticity: thw concept of automatically scaling based on the usage patter for your application.
+ * Agility: kind of speed and flexibility to quickly scale in the cloud.
 
  > Fault tolerance and disaster recovery: Is designed to deal with failure at a small scale, moving you,
  for example, from an unhealthy VM to a healthy VM. Disaster recovery plans are commonly referred to as 
@@ -21,10 +21,15 @@
 
  > Economic benefits of the cloud: 
     - On-Promises Model (Modelo Local): 
-    - Cloud Model (MOodelo em nuvem): offers many economic benefits over the op-promises model
+    - Cloud Model (Modelo em nuvem): offers many economic benefits over the op-promises model
 
 1.2 DESCRIBE THE DIFFERENCES BETWEEN INFRASTRUCTURE-AS-A-SERVICE (IAAS), 
-    PLATFORM-AS-A-SERVICE (PAAS), AND SOFTWARE-AS-A-SERVICE (SAAS):
+    PLATFORM-AS-A-SERVICE (PAAS), AND SOFTWARE-AS-A-SERVICE (SAAS): Offerings in the cloud are typically 
+    referred as a services. Each type of service comes with advantages and disadvantages.
+
+    IaaS: Infrastructure refers to the hardware that your application uses, and IaaS refers to the 
+    virtualized infrastructure offered by a cloud provider. Iaas services allow you to control costs effectively,
+    because your only pay for them when you are using them. Iaas benefit from scaling and elasticity.
 
 
 
