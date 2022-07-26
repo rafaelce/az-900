@@ -31,6 +31,11 @@
     virtualized infrastructure offered by a cloud provider. Iaas services allow you to control costs effectively,
     because your only pay for them when you are using them. Iaas benefit from scaling and elasticity.
 
+    PaaS: a cloud provider still provides the infrastructure for you, but they also provide the operating system, software installed in the 
+    operating system to help you connect to databases end network systems (often referred to as middleware), and many features that enable
+    you to build and manage complex cloud applications. Offer you the flexibility of controlling the application, but they affload management 
+    and control of the underlying systems to the cloud provider. 
+
 
 
  
