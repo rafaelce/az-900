@@ -36,6 +36,27 @@
     you to build and manage complex cloud applications. Offer you the flexibility of controlling the application, but they affload management 
     and control of the underlying systems to the cloud provider. 
 
+    As you've learned, IaaS requires you to contro both the operating system and middleware components along
+    with your application. When you move to PaaS, you affload the control of the operating system and middleware
+    components to the cloud provider, and you're reponsible only application code. 
+
+    SaaS: the cloud provider controls everything. In other words, a SaaS service is software provided by a cloud provider
+    that's install on infrastructure completely controlled by the hosting provider. offer you the flexibility of a pay-as-you-go model.
+    Essentially, you rent your software from a service provider. When using a SaaS service, not only do you benefit from using software written and
+    mainteined by someone else, but you can also benefit from allowing the cloud provider to maintain and configure the application.
+
+1.3: DESCRIBE THE DIFFERENCES BETWEEN PUBLIC, PRIVATE, AND HYBRID CLOUD MODELS: The traditional cloud model is referred to as the public cloud. 
+     In addition to a public cloud model, businesses can also use a private cloud where the infrastructure is dedicated to them. 
+     Finally, a hybrid cloud model represents a mixture of public and private cloud models.
+
+     Public cloud: Is the most common cloud model. You use a shared infrestructure that is acessible on the public network. Microsogt Azure is an example
+     of a public cloud. 
+
+
+    
+    
+
+
 
 
  
