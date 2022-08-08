@@ -49,8 +49,21 @@
      In addition to a public cloud model, businesses can also use a private cloud where the infrastructure is dedicated to them. 
      Finally, a hybrid cloud model represents a mixture of public and private cloud models.
 
-     Public cloud: Is the most common cloud model. You use a shared infrestructure that is acessible on the public network. Microsogt Azure is an example
-     of a public cloud. 
+     Public cloud:  Is the most common cloud model. You use a shared infrestructure that is acessible on the public network. 
+     The network,storage, and VMs that your application uses are provided by a cloud provider and shared between all consumers of the public cloud.
+     Microsogt Azure is an example of a public cloud. Another advantage is that you can control costs more efficiently because you only pay for
+     the resources you are using.
+        Disadvantages: You give up some control of the infrastructure. Security concerns with operating (public Internet).
+        Another disadvantage is that it locks you into the specific configuration defined by the cloud provider.
+
+    Private cloud: Two of the main reasons why companies choose a private cloud are: privacy and regulatory concerns.
+    Unlike the public cloud, private clouds operate on a private network that is only accessible by a single organization.
+    Disadvantages: If you are hosting your private cloud on-premises, you will likely spend as much on IT as you would in a non-cloud environment.
+
+    Hybrid Cloud: Are a mixture of public and private cloud.
+
+
+
 
 
     
