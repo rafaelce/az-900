@@ -71,6 +71,31 @@ Chapter 2: Understand core Azure services
 ---------
 
 2.1 UNDERSTAND THE CORE AZURE ARCHITECTURAL COMPONENTS
+    - Azure regions: In order to provide Azure services to people around the world, Microsoft has created boundaries called geographies.
+                     The fact that each geography contains at least two regions separated by a large physical distance is important. That’s how Azure maintains disaster recovery.
+                     At each region, Microsoft has built datacenters (physical buildings) that contain the physical hardware that Azure uses.
+    
+    - Availability zones: The fact that regions are physically separated by hundreds of miles protects Azure users from data-loss and application outages due to disasters.
+                          However, it’s also important that data and applications maintain availability when a problem occurs at a particular datacenter within a region. Microsoft developed availability zones.
+                          There are at least three availability zones within each enabled region, and because each availability zone exists within its own datacenter in that region, each has a water supply, 
+                          cooling system, network, and power supply that is isolated from other zones.
+                          There are two categories of services that support availability zones: 
+                            * zonal services: Zonal services are services such as virtual machines, managed disks used in a virtual machine, and public IP addresses used in virtual machines.
+                            * zone-redundant services: services such as zone-redundant storage and SQL Databases.
+    
+    - Azure Resource Manager (ARM): is a service that runs in Azure, and it’s responsible for all interaction with Azure services.
+                                    In order to make it easier to deploy and manage Azure services.
+                                    When you create a new Azure service, ARM authenticates you to make sure you have the right access to create that resource, and then it talks to a resource provider for the service you’re creating.
+                                    The flow of a typical ARM request to create or manage a resource is straightforward. A tool such as the Azure portal, command-line tools, or Visual Studio makes a request to the ARM API. 
+                                    The API passes that request to ARM where the user is authenticated and authorized to perform the action. ARM then passes the request to a resource provider, and the resource provider creates the new resource or modifies an existing resource.
+                                    ARM has many benefits, and you should be aware of these for your exam: 
+                                        * ARM allows you to easily deploy multiple Azure resources at once. 
+                                        * ARM makes it possible to reproduce any deployment with consistent results at any point in the future. 
+                                        * ARM allows you to create declarative templates for deployment instead of requiring you to write and maintain complex deployment scripts.
+                                        * ARM makes it possible to set up dependencies so that your resources are deployed in the right order every time.
+
+    - Resource groups: 
+
 
 
 
