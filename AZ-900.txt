@@ -1,3 +1,6 @@
+Chapter 1 : “Understand cloud concepts”
+---------
+
 1.1 DESCRIBE THE BENEFITS AND CONSIDERATIONS OF USING CLOUD SERVICES:
 > High Availabity: 
     SLA (Service-level agreement): Garante um certo nível de disponibilidade em porcentagem. 
@@ -12,7 +15,8 @@
 > Scalability, Elasticity and agility
  * Scalability: horizontal scaling (scaling out) aumenta o número de VM´s.
                 verical scaling (scaling up) aumenta o poder da VM's.
- * Elasticity: thw concept of automatically scaling based on the usage patter for your application.
+ * Elasticity: Cloud providers give you ways to automatically scale based on usage patterns, resource utilization, and times of day.
+                The concept of automatically scaling based on the usage patter for your application.
  * Agility: kind of speed and flexibility to quickly scale in the cloud.
 
  > Fault tolerance and disaster recovery: Is designed to deal with failure at a small scale, moving you,
@@ -36,7 +40,7 @@
     you to build and manage complex cloud applications. Offer you the flexibility of controlling the application, but they affload management 
     and control of the underlying systems to the cloud provider. 
 
-    As you've learned, IaaS requires you to contro both the operating system and middleware components along
+    As you've learned, IaaS requires you to control both the operating system and middleware components along
     with your application. When you move to PaaS, you affload the control of the operating system and middleware
     components to the cloud provider, and you're reponsible only application code. 
 
@@ -61,6 +65,16 @@
     Disadvantages: If you are hosting your private cloud on-premises, you will likely spend as much on IT as you would in a non-cloud environment.
 
     Hybrid Cloud: Are a mixture of public and private cloud.
+
+
+Chapter 2: Understand core Azure services
+---------
+
+2.1 UNDERSTAND THE CORE AZURE ARCHITECTURAL COMPONENTS
+
+
+
+
 
 
 
