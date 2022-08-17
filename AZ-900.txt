@@ -2,9 +2,9 @@ Chapter 1 : “Understand cloud concepts”
 ---------
 
 1.1 DESCRIBE THE BENEFITS AND CONSIDERATIONS OF USING CLOUD SERVICES:
-> High Availabity: 
-    SLA (Service-level agreement): Garante um certo nível de disponibilidade em porcentagem. 
-                                    Garante um tempo de atividade de cerca de 100%
+    - High Availabity: 
+        * SLA (Service-level agreement):  Garante um certo nível de disponibilidade em porcentagem. 
+                                            Garante um tempo de atividade de cerca de 100%
     - Network outage:
     - Application failure:  Application Inseghts integration with your application to give you detailed 
                             information about the performance and reliability of your application.
@@ -31,11 +31,11 @@ Chapter 1 : “Understand cloud concepts”
     PLATFORM-AS-A-SERVICE (PAAS), AND SOFTWARE-AS-A-SERVICE (SAAS): Offerings in the cloud are typically 
     referred as a services. Each type of service comes with advantages and disadvantages.
 
-    IaaS: Infrastructure refers to the hardware that your application uses, and IaaS refers to the 
+    > IaaS: Infrastructure refers to the hardware that your application uses, and IaaS refers to the 
     virtualized infrastructure offered by a cloud provider. Iaas services allow you to control costs effectively,
     because your only pay for them when you are using them. Iaas benefit from scaling and elasticity.
 
-    PaaS: a cloud provider still provides the infrastructure for you, but they also provide the operating system, software installed in the 
+    > PaaS: a cloud provider still provides the infrastructure for you, but they also provide the operating system, software installed in the 
     operating system to help you connect to databases end network systems (often referred to as middleware), and many features that enable
     you to build and manage complex cloud applications. Offer you the flexibility of controlling the application, but they affload management 
     and control of the underlying systems to the cloud provider. 
@@ -44,7 +44,7 @@ Chapter 1 : “Understand cloud concepts”
     with your application. When you move to PaaS, you affload the control of the operating system and middleware
     components to the cloud provider, and you're reponsible only application code. 
 
-    SaaS: the cloud provider controls everything. In other words, a SaaS service is software provided by a cloud provider
+    > SaaS: the cloud provider controls everything. In other words, a SaaS service is software provided by a cloud provider
     that's install on infrastructure completely controlled by the hosting provider. offer you the flexibility of a pay-as-you-go model.
     Essentially, you rent your software from a service provider. When using a SaaS service, not only do you benefit from using software written and
     mainteined by someone else, but you can also benefit from allowing the cloud provider to maintain and configure the application.
@@ -94,7 +94,28 @@ Chapter 2: Understand core Azure services
                                         * ARM allows you to create declarative templates for deployment instead of requiring you to write and maintain complex deployment scripts.
                                         * ARM makes it possible to set up dependencies so that your resources are deployed in the right order every time.
 
-    - Resource groups: 
+    - Resource groups: group is a logical container for Azure services. This help you to delaing dealing with a complex array of services.
+                       By creating all Azure services associated with a particular application in a single resource group, you can then deploy and manage all of those services as a single entity.
+                       Organizing Azure resources in a resource group has many advantages. First of all, you can easily set up deployments using an ARM template.
+
+2.2 DESCRIBE SOME OF THE CORE PRODUCTS AVAILABLE IN AZURE
+    In this skill section, we’ll talk about some of the core Azure products in four different categories:
+        * Azure compute:  This refers to the resources that provide computing power to run your applications. Azure offers both IaaS and PaaS compute products.
+        * Azure networking:  These products provide connectivity between Azure resources, and to and from the Internet or your on-premises resources.
+        * Azure storage:  These products give you secure and reliable cloud storage for your data.
+        * Azure database: These products provide highly-scalable solutions for hosting databases of many varieties.
+
+    > AZURE COMPUTE: allow you to easily and dynamically allocate resources that are needed for any computing task.
+                     You can create compute resources quickly when you need them, and when your needs grow, you can scale those resources to handle additional requirements.
+
+            * Azure virtual machines: is a software-based computer that runs on a physical computer.
+                                      This is an IaaS offering in Azure. VM is susceptible to downtime due to three types of events: 
+                    ** planned maintenance: refers to planned updates that Microsoft makes to the host computer.
+                    ** unplanned maintenance: In an unplanned maintenance event, Azure will attempt to move your VM to a healthy host computer. 
+                                              When it does this, it preserves the state of the VM, including what’s in memory and any files that are open. It only takes Azure a short time to move the VM, during which time it’s in a paused state.
+                    ** unexpected downtime: In a case where the move operation fails, the VM will experience unexpected downtime.
+
+                
 
 
 
