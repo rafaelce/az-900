@@ -115,7 +115,55 @@ Chapter 2: Understand core Azure services
                                               When it does this, it preserves the state of the VM, including what’s in memory and any files that are open. It only takes Azure a short time to move the VM, during which time it’s in a paused state.
                     ** unexpected downtime: In a case where the move operation fails, the VM will experience unexpected downtime.
 
-                
+                    - Availability sets protect you from maintenance events and downtime caused by hardware failures.
+                    To do that, Azure creates some underlying entities in an availability set called [update domains] and [fault domains].
+                        - Fault domains: are a logical representation of the physical rack in which a host computer is installed.
+                                         By default, Azure assigns two fault domains to an availability set.
+                        - Update domains: are designed to protect you from a situation where the host computer is being rebooted.
+                                          When you create an availability set, Azure creates five update domains by default.
+                                          Protect you from planned maintenance events.
+                    
+                    - scale sets: When you create a scale set, you tell Azure what operating system you want to run and then you tell Azure 
+                        how many VMs you want in your scale set. You have many other options such as creating a load balancer or gateway and so forth.
+                        Azure will create as many VMs as you specified (up to 1,000) in one easy step.
+                        Scale sets are deployed in availability sets automatically, so you automatically benefit from multiple 
+                        fault domains and update domains.
+            
+            * Containers in Azure: To help with the problem to move applications between “environments,” and to make it easier to shift applications into new environments, 
+                the concept of containers was invented. A container is created using a zipped version of an application called an image, and it includes everything the application needs to run.
+                Each container operates within an isolated environment. It has its own network, its own storage, and so on.
+                Azure offers numerous technologies for hosting containers. Azure Container Instances (ACI) is a PaaS that makes it easy to start a container with minimal configuration.
+                [Kubernetes] is a container orchestration service. Kubernetes creates containers in a pod. A pod is a group of related containers, and containers within a pod are able to share resources.
+                The computer that Kubernetes pods are running on is called a node or a worker. There will typically be multiple nodes within a Kubernetes instance, and they are all controlled by a master node called the Kubernetes [master].
+                The entire environment of the master and all of its nodes is called a Kubernetes [cluster]. 
+                AKS offloads the burden of dealing with the Kubernetes master to Microsoft. When you create a Kubernetes cluster in AKS, Azure creates the master and the nodes for you. 
+                All you have to do is deploy your containers, and you’re up and running with a managed Kubernetes cluster.
+
+    > AZURE NETWORKING: 
+            * Azure virtual network: An Azure virtual network (often called a VNET) allows Azure services to communicate with each other and with the Internet.
+            * Azure load balancer: App Service uses a load balancer to scale out a web tier in an application when needed. App Service takes care of ensuring that load is distributed across all of the VMs we’re using.
+                                   Azure LoadBalancer spread the load across all your VMs. Azure Load Balancer isn’t just for distributing traffic from the Internet.
+            * Azure Application Gateway: is a load balancer that’s specifically designed to deal with HTTP traffic. Because Application Gateway understands HTTP traffic, it can make decisions based on that HTTP traffic.
+                                         You can also add Web Application Firewall (WAF) to Application Gateway. WAF is designed to stop known vulnerabilities from making it into your VNET, allowing you to operate in a more secure environment.
+ 
+            * VPN Gateway: In some cases, you may need your application hosted in Azure to talk to an on-premises resource (hybrid cloud scenarios). 
+                            VPN Gateway connects your on-premises resources to your Azure VNET using a virtual private network, or VPN.
+                            VPN Gateway connects your on-premises resources to your Azure VNET using a virtual private network, or VPN.
+                                ** Site-to-Site(S2S): Connects your VNET to a single on-premises location.
+                                ** Point-to-Site(P2S): Connects one specific on-premises client PC to your VNET.
+                                ** VNET-to-VNET: Connects two Azure VNETs to each other.
+
+            * Azure Content Delivery Network (CDN): is an effective way of delivering large files or streaming content over the Internet.
+            It makes the downloading of large files much faster by caching the files in multiple geographical locations so that users can get the files from a server as close to them as possible.
+            A CDN works by storing a cached version of files on a point-of-presence (POP) server that is located on the outside edge of a network.
+            
+            * Azure Traffic Manager: 
+
+
+
+
+
+
 
 
 
