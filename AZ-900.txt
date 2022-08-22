@@ -157,27 +157,6 @@ Chapter 2: Understand core Azure services
             It makes the downloading of large files much faster by caching the files in multiple geographical locations so that users can get the files from a server as close to them as possible.
             A CDN works by storing a cached version of files on a point-of-presence (POP) server that is located on the outside edge of a network.
             
-            * Azure Traffic Manager: 
+            * Azure Traffic Manager: is a domain name system (DNS) based system that’s designed to enhance the speed and reliability of your application.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
- 
