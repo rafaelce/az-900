@@ -148,7 +148,6 @@ Chapter 2: Understand core Azure services
  
             * VPN Gateway: In some cases, you may need your application hosted in Azure to talk to an on-premises resource (hybrid cloud scenarios). 
                             VPN Gateway connects your on-premises resources to your Azure VNET using a virtual private network, or VPN.
-                            VPN Gateway connects your on-premises resources to your Azure VNET using a virtual private network, or VPN.
                                 ** Site-to-Site(S2S): Connects your VNET to a single on-premises location.
                                 ** Point-to-Site(P2S): Connects one specific on-premises client PC to your VNET.
                                 ** VNET-to-VNET: Connects two Azure VNETs to each other.
@@ -157,6 +156,78 @@ Chapter 2: Understand core Azure services
             It makes the downloading of large files much faster by caching the files in multiple geographical locations so that users can get the files from a server as close to them as possible.
             A CDN works by storing a cached version of files on a point-of-presence (POP) server that is located on the outside edge of a network.
             
-            * Azure Traffic Manager: is a domain name system (DNS) based system that’s designed to enhance the speed and reliability of your application.
+            * Azure Traffic Manager: is a domain name system (DNS) -based system that’s designed to enhance the speed and reliability of your application.
+             Traffic Manager supports public IP addresses connected to Azure VMs, web apps running in App Service, and cloud services hosted in Azure.
+             Once you’ve configured your endpoints, you specify routing rules that you want Traffic Manager to apply to them.
+             There are many routing rules available in Traffic Manager.
+                ** Priority: All traffic is sent to a primary endpoint, but backup endpoints are available in case the primary endpoint experiences an outage.
+                ** Weighted: Traffic is distributed across endpoints. By default, all traffic is distributed evenly, but you can specify a weight for each endpoint and traffic will be distributed as you specify.
+                ** Performance: Traffic Manager determines the endpoint with the lowest network latency from the user’s location and uses that endpoint.
+                ** Geographic: Traffic is routed based on the geographic location of the DNS server that queries Traffic Manager.
+                ** Multivalue: Returns all valid endpoints that use the specified Internet protocol version, either IPv4 or IPv6.
+                ** Subnet Traffic: is routed based on the end-user IP address range.
+
+            One important thing to remember is that Traffic Manager is DNS-based. That means that a user never directly talks to Traffic Manager. Traffic Manager is only used for the DNS lookup.
+
+    > AZURE STORAGE PRODUCTS: Azure offers many options for storing data. Whether you need to store data temporarily on a disk mounted to a VM, or you need to be able to store data long-term, Azure has an option to fit your needs.
+            * Azure Blob Storage: is designed for storing unstructured data, which has no defined structure. That includes text files, images, videos, documents, and much more. An entity stored in Blob Storage is referred to as a blob. 
+              There are three types of blobs in Azure Storage:
+                    ** Block blobs: Used to store files used by an application.
+                    ** Append blobs They are like block blobs, but append blobs are specialized for append operations. For that reason, they are often used to store constantly updated data like diagnostic logs.
+                    ** Page blobs: They are used to store virtual hard drive (.vhd) files that are used in Azure virtual machines.
+
+              Blobs are stored in storage containers. A container is used as a means of organizing blobs, so you might have a container for video files, another container for image files, and so on. The choice, however, is entirely up to you.
+              The Hot storage tier is for data you need to access often.
+              The Cool storage tier is for data that you intend to store for a longer period and not access quite as often.
+              Microsoft also offers an Archive storage tier for long-term data storage. Data stored in the Archive tier enjoys the lowest storage costs available, but the access costs are the highest. You must keep data in storage for a minimum of 180 days in the Archive tier.
+              You can use Azure Storage Explorer, a free tool available from Microsoft, to upload data.
+              If you want to move a large amount of data, Microsoft offers a service called Data Box.
+              
+              * Azure Queue Storage: A message queue is a component in an application that can store messages that an application uses to know what tasks to take.
+                Azure Queue Storage provides a cloud-based message queue that can be accessed securely from application components located anywhere. They
+
+              * Azure Disk Storage: Disk storage in Azure refers to disks that are used in virtual machines. Azure creates a disk for you when you create a VM, which is automatically designated for temporary storage.
+                Azure disks are available as both traditional hard disks (HDD) and solid-state drives (SSD).
+                Azure disks are available as either Managed Disks or unmanaged disks.
+
+              * Azure Files: is a completely managed file share that you can mount just like any SMB file share. That means existing applications that use network attached storage (NAS) devices 
+                or SMB file shares can use Azure Files without any special tooling, and if you have multiple applications that need to access the same share, that will work with Azure Files, too.
+
+    > AZURE DATABASE PRODUCTS:
+            * Azure SQL Database: is a PaaS offering for SQL Server database hosting. Microsoft manages the platform, so all you have to worry about is your database and the data in it.
+              Azure offers three different deployment options for Azure SQL Database: single database, elastic pool, and managed instance.
+              Single database purchase models: Database Transaction Unit (DTU) and VCore Model
+              Microsoft developed the Azure Database Migration Service (DMS) to make it easier for customers to easily move on-premises databases or databases hosted elsewhere in the cloud to a managed instance.
+            
+            * Azure Cosmos DB: Microsoft offers a hosted NoSQL database system in Azure called Cosmos DB, and Cosmos DB supports all of the NoSQL database types.
+              When you create a Cosmos DB database, you choose the API you want to use, and this determines the database type for your database. 
+              The database API types are:
+                    ** Core (SQL): Creates a document database that you can query using SQL syntax that you might be familiar with from using relational databases.
+                    ** Azure Cosmos DB for MongoDB API Used for migrating a MongoDB database to Cosmos DB. MongoDB databases are document databases.
+                    ** Cassandra Used for migrating a Cassandra database to Cosmos DB. Cassandra databases are column databases.
+                    ** Azure Table Used for migrating data stored in Azure Table Storage to Cosmos DB. This creates a key-value database.
+                    ** Gremlin Used for migrating Gremlin databases to Cosmos DB. Gremlin databases are graph databases.
+            
+            * The Azure Marketplace and its usage scenarios: there are many available products outside of what we’ve discussed. Not only does Microsoft offer many additional services,
+             but third-party vendors also provide a wide array of resources you can use in Azure. All of these resources are available in a single repository called the Azure Marketplace.
+
+SKILL 2.3: DESCRIBE SOME OF THE SOLUTIONS AVAILABLE ON AZURE
+    * Internet of Things (IoT): To help companies manage devices and handle the data they are collecting, Azure has several services that are targeted at IoT, including IoT Hub and IoT Central.
+            ** Azure IoT Hub: it's a service where the IoT devices are added and and you can then manage them, monitor them, and send messages to them, either individually or to groups that you create. 
+               You can add up to 1,000,000 IoT devices to a single IoT Hub. From IoT Hub, you can send messages to devices (called cloud-to-device, or C2D messaging) or 
+               from your device to IoT Hub (called device-to-cloud, or D2C messaging). In addition to messages, you can also use IoT Hub to send files to your devices. This allows you to easily update 
+               the firmware on your devices in a secure way.
+               Every IoT device in IoT Hub has a logical equivalent that’s stored in IoT Hub in JSON format. This JSON representation of the device is called a device twin, and it provides important capabilities.
+               To help with users who want to add a large number of IoT devices to IoT Hub, Microsoft offers the IoT Hub Device Provisioning Service, or DPS.
+
+            ** Azure IoT Central: If you’re looking for a first-class experience in monitoring IoT devices without having to do complex configuration, IoT Central is a good choice.
+               IoT Central is a SaaS offering for IoT devices. Unlike IoT Hub, you don’t have to create any Azure resources to use IoT Central. Instead, 
+               you browse to https://apps.azureiotcentral.com and create your app within the web browser interface.
+               IoT Central also allows you to easily configure rules that will monitor your devices and perform an action you choose when your rule is activated. In
+
+    * Big Data and analytics: 
+
+
+
 
 
