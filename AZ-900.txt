@@ -225,7 +225,22 @@ SKILL 2.3: DESCRIBE SOME OF THE SOLUTIONS AVAILABLE ON AZURE
                you browse to https://apps.azureiotcentral.com and create your app within the web browser interface.
                IoT Central also allows you to easily configure rules that will monitor your devices and perform an action you choose when your rule is activated. In
 
-    * Big Data and analytics: 
+    * Big Data and analytics: Big data means more data than you can analyze through conventional means within the desired time-frame.
+      By placing big data in a data warehouse, you can then use massive amounts of computing power to analyze multiple pieces of data in parallel, 
+      and you can perform analysis on the data much more quickly than you otherwise could.
+      Microsoft has two Azure offerings for storing big data for analysis: Azure SQL Data Warehouse and Azure Data Lake Storage.
+            ** Azute SQL Data Warehouse: Azure SQL Data Warehouse is designed for storing big data that’s in the form of relational data.
+               Data stored in SQL Data Warehouse is in a form quite similar to tables in a SQL Server database, and in fact, when you analyze data in SQL Data Warehouse, 
+               you run complex SQL queries against the data.
+               SQL Data Warehouse provides secure authentication using both SQL Server Authentication in the connection string, which is username and password authentication, and Azure Active Directory.
+               While your data is in SQL Data Warehouse, it’s encrypted using Transparent Data Encryption (TDE) AES-256 encryption.
+              There are two performance tiers available in SQL Data Warehouse, and both of them support scaling up or down and pausing resources so you don’t pay for them.
+
+
+
+
+
+
 
 
 
