@@ -170,7 +170,7 @@ Chapter 2: Understand core Azure services
             One important thing to remember is that Traffic Manager is DNS-based. That means that a user never directly talks to Traffic Manager. Traffic Manager is only used for the DNS lookup.
 
     > AZURE STORAGE PRODUCTS: Azure offers many options for storing data. Whether you need to store data temporarily on a disk mounted to a VM, or you need to be able to store data long-term, Azure has an option to fit your needs.
-            * Azure Blob Storage: is designed for storing unstructured data, which has no defined structure. That includes text files, images, videos, documents, and much more. An entity stored in Blob Storage is referred to as a blob. 
+              * Azure Blob Storage: is designed for storing unstructured data, which has no defined structure. That includes text files, images, videos, documents, and much more. An entity stored in Blob Storage is referred to as a blob. 
               There are three types of blobs in Azure Storage:
                     ** Block blobs: Used to store files used by an application.
                     ** Append blobs They are like block blobs, but append blobs are specialized for append operations. For that reason, they are often used to store constantly updated data like diagnostic logs.
@@ -234,9 +234,14 @@ SKILL 2.3: DESCRIBE SOME OF THE SOLUTIONS AVAILABLE ON AZURE
                you run complex SQL queries against the data.
                SQL Data Warehouse provides secure authentication using both SQL Server Authentication in the connection string, which is username and password authentication, and Azure Active Directory.
                While your data is in SQL Data Warehouse, it’s encrypted using Transparent Data Encryption (TDE) AES-256 encryption.
-              There are two performance tiers available in SQL Data Warehouse, and both of them support scaling up or down and pausing resources so you don’t pay for them.
+               There are two performance tiers available in SQL Data Warehouse, and both of them support scaling up or down and pausing resources so you don’t pay for them.
+               The Gen1 performance tier measures compute resources in Data Warehouse Units, or DWUs. When you scale Gen1 data warehouses for more power, you add DWUs. The Gen2 tier uses compute Data Warehouse Units, or cDWUs.
+               The difference is that Gen2 uses a local disk-based cache in order to improve performance.
 
-
+            ** Azure Data Lake Storage: is designed for storing large amounts of data that you’d like to analyze, but Data Lake Storage is designed for a wide array of data instead of relational data.
+               The two common modes of accessing data are object-based (such as Azure Blob Storage) and file-based.
+               With the introduction of Data Lake Storage Gen2, Microsoft introduced the concept of a hierarchical namespace to storage. This organizes the objects into a system of directories much like the structure of the files on your computer, and it allows for the use of both object-based and file-based models in the same data lake.
+               
 
 
 
