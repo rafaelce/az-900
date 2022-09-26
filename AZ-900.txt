@@ -242,7 +242,7 @@ SKILL 2.3: DESCRIBE SOME OF THE SOLUTIONS AVAILABLE ON AZURE
                The two common modes of accessing data are object-based (such as Azure Blob Storage) and file-based.
                With the introduction of Data Lake Storage Gen2, Microsoft introduced the concept of a hierarchical namespace to storage. This organizes the objects into a system of directories much like the structure of the files on your computer, and it allows for the use of both object-based and file-based models in the same data lake.
                
-
+              
 
 
 
