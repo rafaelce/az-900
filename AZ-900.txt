@@ -240,7 +240,14 @@ SKILL 2.3: DESCRIBE SOME OF THE SOLUTIONS AVAILABLE ON AZURE
 
             ** Azure Data Lake Storage: is designed for storing large amounts of data that you’d like to analyze, but Data Lake Storage is designed for a wide array of data instead of relational data.
                The two common modes of accessing data are object-based (such as Azure Blob Storage) and file-based.
-               With the introduction of Data Lake Storage Gen2, Microsoft introduced the concept of a hierarchical namespace to storage. This organizes the objects into a system of directories much like the structure of the files on your computer, and it allows for the use of both object-based and file-based models in the same data lake.
+               With the introduction of Data Lake Storage Gen2, Microsoft introduced the concept of a hierarchical namespace to storage. This organizes the objects into a system of directories much like the structure of the files on your computer, 
+               and it allows for the use of both object-based and file-based models in the same data lake.
+
+            ** Azure HDInsight: makes it possible to easily create and manage clusters of computers on a common framework designed to perform distributed processing of big data.
+               HDInsight is essentially Microsoft’s managed service that provides a cloud-based implementation of a popular data analytics platform called Hadoop,
+
+            ** Artificial Intelligence: 
+
                
 
 
