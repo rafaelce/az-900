@@ -12,7 +12,7 @@ Chapter 1 : “Understand cloud concepts”
     - Power outage
     - Problems with a reliant system
 
-> Scalability, Elasticity and agility
+> Scalability, Elasticity and Agility
  * Scalability: horizontal scaling (scaling out) aumenta o número de VM´s.
                 verical scaling (scaling up) aumenta o poder da VM's.
  * Elasticity: Cloud providers give you ways to automatically scale based on usage patterns, resource utilization, and times of day.
@@ -229,14 +229,14 @@ SKILL 2.3: DESCRIBE SOME OF THE SOLUTIONS AVAILABLE ON AZURE
       By placing big data in a data warehouse, you can then use massive amounts of computing power to analyze multiple pieces of data in parallel, 
       and you can perform analysis on the data much more quickly than you otherwise could.
       Microsoft has two Azure offerings for storing big data for analysis: Azure SQL Data Warehouse and Azure Data Lake Storage.
-            ** Azute SQL Data Warehouse: Azure SQL Data Warehouse is designed for storing big data that’s in the form of relational data.
+            ** Azute SQL Data Warehouse: Azure SQL Data Warehouse is designed for storing big data that’s in the form of [relational data].
                Data stored in SQL Data Warehouse is in a form quite similar to tables in a SQL Server database, and in fact, when you analyze data in SQL Data Warehouse, 
                you run complex SQL queries against the data.
                SQL Data Warehouse provides secure authentication using both SQL Server Authentication in the connection string, which is username and password authentication, and Azure Active Directory.
                While your data is in SQL Data Warehouse, it’s encrypted using Transparent Data Encryption (TDE) AES-256 encryption.
                There are two performance tiers available in SQL Data Warehouse, and both of them support scaling up or down and pausing resources so you don’t pay for them.
-               The Gen1 performance tier measures compute resources in Data Warehouse Units, or DWUs. When you scale Gen1 data warehouses for more power, you add DWUs. The Gen2 tier uses compute Data Warehouse Units, or cDWUs.
-               The difference is that Gen2 uses a local disk-based cache in order to improve performance.
+               The Gen1 performance tier measures compute resources in Data Warehouse Units, or DWUs. When you scale Gen1 data warehouses for more power, you add DWUs. The Gen2 tier uses compute Data Warehouse Units, 
+               or cDWUs. The difference is that Gen2 uses a local disk-based cache in order to improve performance.
 
             ** Azure Data Lake Storage: is designed for storing large amounts of data that you’d like to analyze, but Data Lake Storage is designed for a wide array of data instead of relational data.
                The two common modes of accessing data are object-based (such as Azure Blob Storage) and file-based.
@@ -246,10 +246,10 @@ SKILL 2.3: DESCRIBE SOME OF THE SOLUTIONS AVAILABLE ON AZURE
             ** Azure HDInsight: makes it possible to easily create and manage clusters of computers on a common framework designed to perform distributed processing of big data.
                HDInsight is essentially Microsoft’s managed service that provides a cloud-based implementation of a popular data analytics platform called Hadoop,
 
-            ** Artificial Intelligence: 
+            ** Artificial Intelligence:   
 
                
-              
+
 
 
 
